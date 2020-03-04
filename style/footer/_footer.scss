@@ -1,0 +1,242 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 638px;
+    width: 100%;
+    background-image: url(../../image/footer-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+
+    .footer__card {
+        display: flex;
+        margin-bottom: 78px;
+        width: 1140px;
+    }
+    
+    .meet {
+        z-index: 2;
+    
+        .meet__header {
+            font-family: 'Futura PT';
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 98.2%;
+            color: #FFFFFF;
+            margin: 129px 0 45px 0;
+        }
+        
+        .meet__address,
+        .meet__email,
+        .meet__skype {
+            margin-bottom: 10px;
+        }
+        
+        .meet__address-text,
+        .meet__email-text,
+        .meet__skype-text {
+            font-family: 'Futura PT';
+            font-weight: 100;
+            font-size: 28px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .meet__phone-by {
+            margin: 50px 0 23px 0;
+        }
+        
+        .meet__phone-ru {
+            margin-top: 23px;
+        }
+        
+        .meet__phone-by-1,
+        .meet__phone-by-2,
+        .meet__phone-ru-1 {
+            font-family: 'Futura PT';
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    
+    .consultation {
+        position: relative;
+        margin-left: 290px;
+        z-index: 2;
+    
+        .consultation__header {
+            font-family: 'Futura PT';
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFA61A;
+            margin-top: 72px;
+        }
+        
+        .consultation__form-container {
+            position: absolute;
+            width: 300px;
+            height: 340px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 2px;
+        }
+
+        .consultation__form-container-bg {
+            position: absolute;
+            width: 280px;
+            height: 15px;
+            left: 10px;
+            bottom: -10px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 2px;
+        }
+        
+        .consultation__form-container-header {
+            width: 218px;
+            font-family: 'Futura PT';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            text-align: center;
+            color: #333333;
+            margin: 37px 0 20px 41px;
+        }
+        
+        .consultation__form {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 280px;
+            height: 320px;
+            border: 1px solid #F4F4FC;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+        }
+        
+        .consultation__form-input-name {
+            position: absolute;
+            width: 218px;
+            height: 44px;
+            left: 31px;
+            top: 118px;
+            background: #F4F4FC;
+            border-radius: 2px;
+            border: none;
+            font-family: 'Futura PT';
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 23px;
+            color: #5F6168;
+            padding-left: 15px;
+            cursor: pointer;
+        }
+        
+        .consultation__form-input-phone {
+            position: absolute;
+            width: 218px;
+            height: 44px;
+            left: 31px;
+            top: 180px;
+            background: #F4F4FC;
+            border-radius: 2px;
+            border: none;
+            font-family: 'Futura PT';
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 23px;
+            color: #5F6168;
+            padding-left: 15px;
+            cursor: pointer;
+        }
+        
+        .consultation__form-button {
+            position: absolute;
+            left: 31px;
+            top: 242px;
+            width: 218px;
+            height: 44px;
+            background: linear-gradient(184.82deg, #FFCB66 9.34%, #FF9900 85.28%);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 2px;
+            font-family: 'Futura PT';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    
+    .footer__card-nav {
+        display: flex;
+        width: 1140px;
+        height: 80px;
+        z-index: 2;
+    
+        .footer__nav {
+            width: 730px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer__nav-link {
+            font-family: 'Futura PT';
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 26px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .footer__nav-link:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-bottom: 2px solid #FABE31;
+        }
+    }
+    
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        opacity: 0.3;
+        z-index: 2;
+    }
+    
+    .rights {
+        display: flex;
+        align-items: center;
+        font-family: 'Futura PT';
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-left: 38px;
+    }
+}
+
+.footer:after {
+    width: 100%;
+    height: 638px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    background: #08090E;
+    opacity: 0.55;
+}
+

@@ -1,0 +1,204 @@
+.header {
+    display: grid;
+    grid-template-columns: 361px 1fr;
+    grid-template-rows: 86px;
+    grid-template-areas: "logo nav";
+    width: 100%;
+    height: 800px;
+}
+
+.header:after {
+    width: 100%;
+    height: 800px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    background: #131321;
+    opacity: 0.6;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+    z-index: 2;
+}
+
+.header__nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 139px 0 73px;
+    height: 86px;
+    width: 100%;
+    z-index: 2;
+
+    .header__nav-link {
+        font-family: 'Futura PT';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .header__nav-link:hover {
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid #FABE31;
+    }
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-control-prev-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 374px;
+    z-index: 3;
+    height: 100px;
+}
+
+.carousel-inner-img {
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    border-top: none;
+    border-bottom: none;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 354px;
+    z-index: 2;
+
+    .project__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 763px;
+        height: 345px;
+    }
+
+    .project__container-bg {
+        position: absolute;
+        bottom: 0;
+        width: 743px;
+        height: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+
+    .project__container-border {
+        position: absolute;
+        left: 10px;
+        top: 241px;
+        width: 743px;
+        height: 86px;
+        border: 1px solid #F4F4FC;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        z-index: 2;
+    }
+    
+    .project__container-header {
+
+        font-family: 'Futura PT';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+        color: white;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+    
+    .project__container-text {
+        font-family: 'Futura PT';
+        font-weight: 100;
+        font-size: 34px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 71px;
+    }
+    
+    .project__container-text--orange {
+        font-family: 'Futura PT Bold';
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        color: #FFA921;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    
+    .project__container-form {
+        position: absolute;
+        top: 231px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        width: 763px;
+        height: 106px;
+    }
+    
+    .project__container-form-input {
+        width: 220px;
+        height: 44px;
+        background-color: #EFEFFF;
+        border-radius: 2px;
+        border: none;
+        margin: 0 10px;
+        padding-left: 14px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .project__container-form-button {
+        width: 221px;
+        height: 44px;
+        background: linear-gradient(184.76deg, #FEB72F 9.34%, #EB8D00 85.28%);
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 9px 72px;
+        margin-left: 10px;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+
